@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerweX Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SerweX Creator</h1>
+        <p>Twórz swoje serwery Minecraft w prosty sposób!</p>
+        <div class="header-buttons">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('pl')">Polski</button>
+            <a href="https://discord.gg/gQVNDtc6C8" target="_blank" class="button">Discord</a>
+        </div>
+    </header>
+    <main>
+        <h2>Plany</h2>
+        <p>Zamówienia złóż na Discordzie!</p>
+        <div class="plan">
+        <img src="aternos.png" alt="Aternos Logo">
+            <h2>Aternos - 0.00 PLN</h2>
+            <p>Wybierz rodzaj serwera:</p>
+            <ul>
+                <li>Survivalowa - 0.00 PLN</li>
+                <li>BoxPVP - 5.00 PLN</li>
+                <li>Lifesteal - 9.99 PLN</li>
+            </ul>
+        </div>
+        <div class="plan">
+        <img src="titanaxe.png" alt="Titanaxe Logo">
+            <h2>Titanaxe - 65.00 PLN</h2>
+            <p>Wybierz rodzaj serwera:</p>
+            <ul>
+                <li>Survivalowa - 0.00 PLN</li>
+                <li>BoxPVP - 5.00 PLN</li>
+                <li>Lifesteal - 9.99 PLN</li>
+            </ul>
+        </div>
+        <div class="plan">
+        <img src="icehost.png" alt="Icehost Logo">
+            <h2>Icehost - 150.00 PLN</h2>
+            <p>Wybierz rodzaj serwera:</p>
+            <ul>
+                <li>Survivalowa - 0.00 PLN</li>
+                <li>BoxPVP - 5.00 PLN</li>
+                <li>Lifesteal - 9.99 PLN</li>
+            </ul>
+        </div>
+        <h2>Metody płatności</h2>
+        <p>
+            Akceptujemy:
+            <ul>
+                <li>PaySafeCard</li>
+                <li>Przelew</li>
+                <li>PayPal</li>
+            </ul>
+        </p>
+        <h2>Kontakt z twórcami</h2>
+        <p>
+            Twórca główny: TryYourSkill (Discord: tryyourskill)<br>
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 SerweX Creator - Wszystkie prawa zastrzeżone</p>
+    </footer>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                document.querySelector('header h1').innerText = 'SerweX Creator';
+                document.querySelector('main p').innerText = 'Place your orders on Discord!';
+                document.querySelector('header p').innerText = 'Create your Minecraft servers easily!';
+                document.querySelector('main h2').innerText = 'Plans';
+                document.querySelector('footer p').innerText = '© 2024 SerweX Creator - All rights reserved';
+            } else {
+                document.querySelector('header h1').innerText = 'SerweX Creator';
+                document.querySelector('header p').innerText = 'Twórz swoje serwery Minecraft w prosty sposób!';
+                document.querySelector('main h2').innerText = 'Plany';
+                document.querySelector('footer p').innerText = '© 2024 SerweX Creator - Wszystkie prawa zastrzeżone';
+            }
+        }
+    </script>
+</body>
+</html>
